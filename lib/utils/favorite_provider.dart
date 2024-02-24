@@ -6,8 +6,6 @@ class FavoriteProvider with ChangeNotifier{
   List<int> get selectedFavoriteItem => _selectedFavoriteItem;
 
 
-
-
   void deleteForFavoritePage(int index) {
     _selectedFavoriteItem.removeAt(index);
     notifyListeners();
